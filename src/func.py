@@ -6,6 +6,6 @@ def number_format(name):
         format_number = name[-len(name):-16] + " " + name[-16:-12] + " " + name[-12:-10] + "**" + " " + "****" + " " + name[-4:]
         return format_number
 
-def data_format(date):
+def date_format(date):
     format_date = ".".join(date.split("-")[::-1])
     return format_date

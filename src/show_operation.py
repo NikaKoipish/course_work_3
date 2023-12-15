@@ -1,7 +1,7 @@
 import json
-from func import number_format, data_format
+from func import number_format, date_format
 
-with open("C:/Users/User/Nika/course_work_proj/utils/operations.json", encoding='utf-8') as file:
+with open("C:/Users/User/Nika/course_work_proj/src/operations.json", encoding='utf-8') as file:
     data_dict = json.load(file)
 
 date_list = []
@@ -24,7 +24,7 @@ for i in range(5):
              amount = data["operationAmount"]["amount"]
              currency = data["operationAmount"]["currency"]["name"]
 
-             print(f"{data_format(date_name)} {description_name}\n"
+             print(f"{date_format(date_name)} {description_name}\n"
                    f"{number_format(from_name)} -> {number_format(to_name)}\n"
                    f"{amount} {currency}\n"
                    f"")
