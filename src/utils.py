@@ -5,17 +5,17 @@ def get_data(path):
         data_dict = json.load(file)
         return data_dict
 
-def get_filtered_data(data_dict):
+def get_filtered_data(dictionary):
     date_list = []
-    for data in data_dict:
+    for data in dictionary:
         if "from" not in data:
             continue
         elif data["state"] == "EXECUTED":
             date_list.append(data["date"][0:10])
     return date_list
 
-def get_sorted_list(date_list):
-    sorted_list = sorted(date_list, reverse=True)[0:5]
+def get_sorted_list(data):
+    sorted_list = sorted(data, reverse=True)[0:5]
     return sorted_list
 
 def number_format(name):
