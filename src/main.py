@@ -1,5 +1,5 @@
 import json
-from func import number_format, date_format
+from utils import number_format, date_format
 
 with open("C:/Users/User/Nika/course_work_proj/src/operations.json", encoding='utf-8') as file:
     data_dict = json.load(file)
