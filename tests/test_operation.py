@@ -1,6 +1,4 @@
-import sys
-sys.path.append("C:/Users/User/Nika/course_work_proj/src")
-from func import number_format, date_format
+from src.utils import number_format, date_format
 
 def test_number_format():
     assert number_format("Maestro 1596837868705199") == "Maestro  1596 83** **** 5199"
