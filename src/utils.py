@@ -14,6 +14,10 @@ def get_filtered_data(data_dict):
             date_list.append(data["date"][0:10])
     return date_list
 
+def get_sorted_list(date_list):
+    sorted_list = sorted(date_list, reverse=True)[0:5]
+    return sorted_list
+
 def number_format(name):
     if "счет" in name.lower():
         name_list = name.split()
