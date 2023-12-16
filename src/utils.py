@@ -1,3 +1,5 @@
+
+
 def number_format(name):
     if "счет" in name.lower():
         format_number = name[:4] + " " + "**" + name[-4:]
